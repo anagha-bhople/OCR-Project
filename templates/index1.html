@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<body>
+<a href="/"> Upload File </a>
+<br>
+<br>
+<table border=1>
+    <thead>
+    <td>username</td>
+    <td>name</td>
+    <td>aadhar_no</td>
+    <td>gender</td>
+    <td>dob</td>
+    <td>pincode</td>
+    <td>type</td>
+    </thead>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{row["username"]}}</td>
+        <td>{{row["name"]}}</td>
+        <td>{{row["aadhar_no"]}}</td>
+        <td>{{row["gender"]}}</td>
+        <td>{{row["dob"]}}</td>
+        <td>{{row["pincode"]}}</td>
+        <td>{{row["type"]}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+
+

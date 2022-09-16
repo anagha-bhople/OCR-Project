@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<br>
+
+
+<h1>Upload Document</h1>
+
+<form method=post enctype=multipart/form-data>
+
+
+    Username
+
+    <br>
+    <input type="text" name="name"/>
+    </br>
+
+    <h3>Upload aadhar front</h3>
+
+    <input type=file name=file_aadhar_front>
+
+    <p>
+    <h3>Upload aadhar back</h3>
+
+    <input type=file name=file_aadhar_back>
+    <input type=submit value=Upload>
+</form>
+
+{% if msg %}
+<h3>{{ msg }}</h3>
+{% endif %}
+
+{% if msg1 %}
+<h3> {{msg1}}</h3>
+{% endif %}
+
+{% if msg2 %}
+<h3> {{msg2}}</h3>
+{% endif %}
+
+
+{% if msg3 %}
+<h3> {{msg3}}</h3>
+{% endif %}
+
+
+<br>
+<br>
+<a href="/data1"> Show Aadhar Data </a>
+
+
+</body>
+</html>

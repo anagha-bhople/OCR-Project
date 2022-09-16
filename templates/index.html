@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+<a href="/"> Upload File </a>
+<br>
+<br>
+<table border=1>
+    <thead>
+    <td>username</td>
+    <td>entity_dob</td>
+    <td>entity_father_name</td>
+    <td>entity_name</td>
+    <td>entity_pan_no</td>
+    <td>entity_type</td>
+    </thead>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{row["username"]}}</td>
+        <td>{{row["entity_dob"]}}</td>
+        <td>{{row["entity_father_name"]}}</td>
+        <td>{{row["entity_name"]}}</td>
+        <td>{{row["entity_pan_no"]}}</td>
+        <td>{{row["entity_type"]}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
